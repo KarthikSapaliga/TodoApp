@@ -3,10 +3,10 @@ import AuthRoute from "./routes/auth.js";
 import TodoRoute from "./routes/todo.js";
 import dotenv from "dotenv";
 
+dotenv.config();
+
 const app = express();
 const PORT = 8000;
-
-dotenv.config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
