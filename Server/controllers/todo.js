@@ -1,5 +1,5 @@
 export async function getAllTodos(req, res, next) {
-  res.send("get all todos");
+  // res.send("get all todos");
 }
 
 export async function getTodo(req, res, next) {
