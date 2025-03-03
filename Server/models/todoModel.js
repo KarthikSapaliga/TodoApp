@@ -10,10 +10,6 @@ const todoSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  description: {
-    type: String,
-    required: false,
-  },
   isCompleted: {
     type: Boolean,
     default: false,
