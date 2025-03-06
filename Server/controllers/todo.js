@@ -49,6 +49,7 @@ export async function updateTodo(req, res, next) {
 }
 
 export async function addTodo(req, res, next) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   const data = req.body;
   if (!data || !data.title) {
     return next(createError(404, "Title is required!"));

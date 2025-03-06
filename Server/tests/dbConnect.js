@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
 const User = mongoose.model("Tests", userSchema);
 
 const newuser = new User({
-  email: "abc@gmail.com",
+  email: "abcd@gmail.com",
   password: "asfinfsdk",
 });
 

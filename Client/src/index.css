@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Regular";
+  src: local("Poppins-Regular"), url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("Poppins-Bold"), url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -56,5 +68,21 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-normal;
+  }
+  .message {
+    @apply text-left w-full p-4 text-sm text-white bg-[#f74850];
+  }
+  .success-msg {
+    @apply bg-[#5cb85c];
+  }
+  .error-msg {
+    @apply bg-[#ff4444];
+  }
+  .icon-hover {
+    @apply text-slate-400 hover:cursor-pointer hover:text-primary;
   }
 }
